@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgba(171, 194, 210, 0.9);
+}
+
+.search__label {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.search__input {
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+  font-size: 18px;
+}
+
+.movies-container {
+  padding: 5px;
+}
+
+.movies-container__results {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.movie-card {
+  margin: 10px;
+  max-width: 500px;
+  min-width: 250px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(10, 10, 10, 0.23);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.movie-card__title {
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.movie-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.movie-card__icon {
+  width: 18px;
+}
+
+.movie-card__poster {
+  width: 100%;
+}
+
+.movie-card--selected {
+  background-color: rgba(6, 14, 93, 0.9);
+  color: rgba(255, 255, 255, 1);
+}
+
+.confirmation-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(171, 194, 210, 0.9);
+  font-size: 14px;
+}
+
+.confirmed-container {
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+}
+
+.confirmed-movies {
+  max-width: 350px;
+  margin: 20% auto;
+  border-radius: 5px;
+  padding: 50px;
+  background-color: rgba(6, 14, 93, 0.9);
+  color: rgba(255, 255, 255, 1);
+}
+
+.confirmed-movies__heading {
+  font-size: 18px;
+}
+
+.confirmed-movies__list {
+  padding: 0;
+  font-weight: 300;
+}
+
+.confirmed-movies__movie-title {
+  margin: 10px;
+  list-style-type: none;
+  font-size: 14px;
+}
